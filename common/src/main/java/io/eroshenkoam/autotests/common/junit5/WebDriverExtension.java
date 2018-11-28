@@ -14,12 +14,12 @@ public class WebDriverExtension implements BeforeEachCallback, AfterEachCallback
     private final WebDriverManager manager = new DefaultWebDriverManager();
 
     @Override
-    public void beforeEach(ExtensionContext context) {
+    public void beforeEach(final ExtensionContext context) {
         manager.startWebDriver();
     }
 
     @Override
-    public void afterEach(ExtensionContext context) {
+    public void afterEach(final ExtensionContext context) {
         manager.stopWebDriver();
     }
 

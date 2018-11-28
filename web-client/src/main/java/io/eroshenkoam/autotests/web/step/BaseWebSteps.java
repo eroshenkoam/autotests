@@ -1,27 +1,20 @@
 package io.eroshenkoam.autotests.web.step;
 
-import io.eroshenkoam.autotests.web.config.WebConfig;
-
-import javax.inject.Inject;
-
 /**
  * @author eroshenkoam (Artem Eroshenko).
  */
 public class BaseWebSteps {
 
-    @Inject
-    private WebConfig config;
-
     public void openMainPage() {
-
+        //open main page here
     }
 
-    public void openRepositoriesList(String owner) {
-
+    public void openRepositoriesList(final String owner) {
+        //open repositories list
     }
 
-    public void repositoriesListShouldContains(String... names) {
-
+    public void repositoriesListShouldContains(final String... names) {
+        //check repositories list
     }
 
 }

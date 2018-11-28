@@ -20,7 +20,7 @@ public class ApiModule extends AbstractModule {
     }
 
     @Provides
-    protected GithubClient providesGithubClient(ApiConfig config) {
+    protected GithubClient providesGithubClient(final ApiConfig config) {
         final Retrofit retrofit = new Retrofit.Builder()
                 .addCallAdapterFactory(new DefaultCallAdapterFactory<>())
                 .addConverterFactory(JacksonConverterFactory.create())

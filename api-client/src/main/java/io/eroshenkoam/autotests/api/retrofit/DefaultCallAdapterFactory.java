@@ -102,7 +102,7 @@ public final class DefaultCallAdapterFactory<T> extends CallAdapter.Factory {
             }
             if (!response.isSuccessful()) {
                 if (response.code() == NOT_FOUND) {
-                    return null;
+                    return response.body();
                 }
                 throw new RetrofitException(getErrorMessage(response));
             }

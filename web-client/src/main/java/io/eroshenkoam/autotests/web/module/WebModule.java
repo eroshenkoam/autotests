@@ -10,10 +10,6 @@ import org.aeonbits.owner.ConfigFactory;
  */
 public class WebModule extends AbstractModule {
 
-    @Override
-    public void configure() {
-    }
-
     @Provides
     public WebConfig provideWebConfig() {
         return ConfigFactory.newInstance().create(WebConfig.class, System.getProperties());

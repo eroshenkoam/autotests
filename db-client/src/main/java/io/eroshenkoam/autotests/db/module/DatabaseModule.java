@@ -32,7 +32,7 @@ public class DatabaseModule extends AbstractModule {
         return createDbo(dbi, DatabaseClient.class);
     }
 
-    protected <T> T createDbo(DBI dbi, Class<T> client) {
+    protected <T> T createDbo(final DBI dbi, final Class<T> client) {
         return dbi.onDemand(client);
     }
 

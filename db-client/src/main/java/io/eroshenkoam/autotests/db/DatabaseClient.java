@@ -9,10 +9,10 @@ import org.skife.jdbi.v2.sqlobject.customizers.QueryTimeOut;
  */
 public interface DatabaseClient {
 
-    @SqlQuery("SELECT owner\n" +
-            "FROM repositories \n" +
-            "WHERE owner LIKE :owner\n" +
-            "ORDER BY APPSTATUSDATE DESC")
+    @SqlQuery("SELECT owner\n"
+            + "FROM repositories \n"
+            + "WHERE owner LIKE :owner\n"
+            + "ORDER BY APPSTATUSDATE DESC")
     @QueryTimeOut(60)
     String getApplicationIdByPassport(@Bind("owner") String owner);
 

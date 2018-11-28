@@ -2,7 +2,6 @@ package io.eroshenkoam.autotests.web;
 
 import io.eroshenkoam.autotests.api.module.ApiModule;
 import io.eroshenkoam.autotests.api.step.GithubApiSteps;
-import io.eroshenkoam.autotests.common.junit5.Regress;
 import io.eroshenkoam.autotests.web.module.WebModule;
 import io.eroshenkoam.autotests.web.step.BaseWebSteps;
 import name.falgout.jeffrey.testing.junit.guice.GuiceExtension;
@@ -28,7 +27,6 @@ public class RepositoriesNamesTest {
     private BaseWebSteps webSteps;
 
     @Test
-    @Regress
     public void repositoriesListShouldContainsRepositoriesFromApi() {
 
         final String[] names = githubApiSteps.getRepositoriesNames(OWNER);
@@ -40,7 +38,6 @@ public class RepositoriesNamesTest {
 
     }
 
-    @Regress
     public void antoher() {
 
     }

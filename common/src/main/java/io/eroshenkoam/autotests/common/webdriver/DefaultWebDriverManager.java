@@ -1,6 +1,7 @@
 package io.eroshenkoam.autotests.common.webdriver;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 /**
  * @author eroshenkoam (Artem Eroshenko).
@@ -11,12 +12,12 @@ public class DefaultWebDriverManager implements WebDriverManager {
 
     @Override
     public void startWebDriver() {
-
+        driver = new ChromeDriver();
     }
 
     @Override
     public void stopWebDriver() {
-
+        driver.quit();
     }
 
     @Override
