@@ -1,6 +1,7 @@
 # Idea files
 .idea
 *.iml
+out
 
 # Gradle files
 .gradle
