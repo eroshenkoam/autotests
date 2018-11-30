@@ -2,4 +2,7 @@
 dependencies {
     compile("org.junit.jupiter:junit-jupiter-api")
     compile("org.seleniumhq.selenium:selenium-java")
+
+    compile("com.google.inject:guice")
+
 }

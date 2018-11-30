@@ -1,17 +1,19 @@
-package io.eroshenkoam.autotests.common.junit5;
+package io.eroshenkoam.autotests.web.junit5;
 
-import io.eroshenkoam.autotests.common.webdriver.DefaultWebDriverManager;
-import io.eroshenkoam.autotests.common.webdriver.WebDriverManager;
+import io.eroshenkoam.autotests.web.webdriver.WebDriverManager;
 import org.junit.jupiter.api.extension.AfterEachCallback;
 import org.junit.jupiter.api.extension.BeforeEachCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
 
+import javax.inject.Inject;
+
 /**
  * @author eroshenkoam (Artem Eroshenko).
  */
-public class WebDriverExtension implements BeforeEachCallback, AfterEachCallback {
+public class WebDriverExtension implements BeforeEachCallback, AfterEachCallback, InjectorExtension {
 
-    private final WebDriverManager manager = new DefaultWebDriverManager();
+    @Inject
+    private WebDriverManager manager;
 
     @Override
     public void beforeEach(final ExtensionContext context) {

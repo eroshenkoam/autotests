@@ -1,4 +1,4 @@
-package io.eroshenkoam.autotests.common.webdriver;
+package io.eroshenkoam.autotests.web.webdriver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

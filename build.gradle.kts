@@ -39,15 +39,19 @@ configure(subprojects) {
 
     configure<DependencyManagementExtension> {
         dependencies {
+            dependency("io.qameta.atlas:atlas-webdriver:1.2.0")
+
             dependency("org.aeonbits.owner:owner:1.0.10")
             dependency("org.projectlombok:lombok:1.16.16")
 
             dependency("com.google.inject:guice:4.2.2")
 
+            dependency("com.google.guava:guava:24.0-jre")
+
             dependency("com.squareup.retrofit2:retrofit:2.5.0")
             dependency("com.squareup.retrofit2:converter-jackson:2.5.0")
 
-            dependency("org.seleniumhq.selenium:selenium-java:3.141.5")
+            dependency("org.seleniumhq.selenium:selenium-java:3.9.1")
 
             dependency("org.junit.jupiter:junit-jupiter-api:5.2.0")
             dependency("org.junit.jupiter:junit-jupiter-engine:5.2.0")
@@ -67,6 +71,8 @@ configure(subprojects) {
     }
 
     repositories {
+        maven("https://dl.bintray.com/qameta/maven")
+
         mavenCentral()
     }
 
