@@ -40,6 +40,7 @@ configure(subprojects) {
     configure<DependencyManagementExtension> {
         dependencies {
             dependency("io.qameta.atlas:atlas-webdriver:1.2.0")
+            dependency("ru.yandex.qatools.htmlelements:htmlelements-matchers:1.18")
 
             dependency("org.aeonbits.owner:owner:1.0.10")
             dependency("org.projectlombok:lombok:1.16.16")

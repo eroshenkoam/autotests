@@ -5,8 +5,5 @@ import io.qameta.atlas.WebPage;
 /**
  * @author eroshenkoam (Artem Eroshenko).
  */
-public interface GithubMainPage extends WebPage {
-
-
-
+public interface MainPage extends WebPage {
 }
