@@ -3,6 +3,9 @@ dependencies {
     compile("org.junit.jupiter:junit-jupiter-api")
     compile("org.seleniumhq.selenium:selenium-java")
 
+    compile("com.fasterxml.jackson.core:jackson-databind")
     compile("com.google.inject:guice")
+    compile("commons-io:commons-io")
 
+    testCompileOnly("org.projectlombok:lombok")
 }

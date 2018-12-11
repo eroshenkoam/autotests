@@ -42,8 +42,12 @@ configure(subprojects) {
             dependency("io.qameta.atlas:atlas-webdriver:1.2.0")
             dependency("ru.yandex.qatools.htmlelements:htmlelements-matchers:1.18")
 
+            dependency("commons-io:commons-io:2.6")
+
             dependency("org.aeonbits.owner:owner:1.0.10")
             dependency("org.projectlombok:lombok:1.16.16")
+
+            dependency("com.fasterxml.jackson.core:jackson-databind:2.9.4")
 
             dependency("com.google.inject:guice:4.2.2")
 
