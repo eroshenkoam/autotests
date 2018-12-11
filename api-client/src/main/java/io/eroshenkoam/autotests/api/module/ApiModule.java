@@ -6,6 +6,7 @@ import io.eroshenkoam.autotests.api.GithubClient;
 import io.eroshenkoam.autotests.api.config.ApiConfig;
 import io.eroshenkoam.autotests.api.retrofit.DefaultCallAdapterFactory;
 import io.eroshenkoam.autotests.api.retrofit.DefaultCookieJar;
+import io.qameta.allure.okhttp3.AllureOkHttp3;
 import okhttp3.OkHttpClient;
 import org.aeonbits.owner.ConfigFactory;
 import retrofit2.Retrofit;
@@ -24,6 +25,7 @@ public class ApiModule extends AbstractModule {
     @Provides
     protected GithubClient providesGithubClient(final ApiConfig config) {
         final OkHttpClient client = new OkHttpClient.Builder()
+                .addInterceptor(new AllureOkHttp3())
                 .cookieJar(new DefaultCookieJar())
                 .build();
 

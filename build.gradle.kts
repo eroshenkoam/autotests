@@ -39,6 +39,9 @@ configure(subprojects) {
 
     configure<DependencyManagementExtension> {
         dependencies {
+            dependency("io.qameta.allure:allure-junit5:2.8.1")
+            dependency("io.qameta.allure:allure-okhttp3:2.8.1")
+
             dependency("io.qameta.atlas:atlas-webdriver:1.2.0")
             dependency("ru.yandex.qatools.htmlelements:htmlelements-matchers:1.18")
 
